@@ -1,0 +1,9 @@
+<tui-tabs [(activeItemIndex)]="activeTabIndex">
+  <button
+    *ngFor="let tab of tabList"
+    tuiTab
+    (click)="navigateToTab(tab.id)"
+  >
+    {{ tab.title }}
+  </button>
+</tui-tabs>

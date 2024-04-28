@@ -1,0 +1,41 @@
+<div class="auth-container">
+  <div class="heading">НАШ БАНК</div>
+  <div class="tui-space_bottom-4">Авторизация</div>
+
+  <form
+    class="form"
+    [formGroup]="authForm"
+    (submit)="onSubmit()"
+  >
+    <tui-input
+      class="tui-space_bottom-5"
+      formControlName="login">
+      Введите логин
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+
+    <tui-input-password
+      formControlName="password"
+      class="tui-space_bottom-5"
+    >
+      Введите пароль
+      <input
+        placeholder="Введите пароль"
+        tuiTextfield
+      />
+    </tui-input-password>
+
+    <button
+      tuiButton
+      type="submit"
+      appearance="secondary"
+      class="submit-button tui-space_bottom-4"
+    >
+      Войти
+    </button>
+
+    <div class="sub-heading">Проблемы со входом? Обратитесь в поддержку банка</div>
+  </form>
+</div>

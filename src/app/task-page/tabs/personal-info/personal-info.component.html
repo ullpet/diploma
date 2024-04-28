@@ -1,0 +1,67 @@
+<form [formGroup]="personalInfoForm" (submit)="saveData()">
+  <div class="container">
+    <tui-input formControlName="name" class="input tui-space_right-4">
+      Фамилия
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="lastName" class="input">
+      Имя
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+  <div class="container">
+    <tui-input formControlName="middleName" class="input tui-space_right-4">
+      Отчество
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="phone" class="input">
+      Номер телефона
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+  <div class="container">
+    <tui-input formControlName="city" class="input tui-space_right-4">
+      Город
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="street" class="input">
+      Улица
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+  <div class="container">
+    <tui-input formControlName="flat" class="input tui-space_right-4">
+      Квартира
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="gender" class="input">
+      Пол
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+
+  <button
+    tuiButton
+    type="submit"
+    appearance="secondary"
+    class="submit-button"
+  >
+    Сохранить данные
+  </button>
+</form>

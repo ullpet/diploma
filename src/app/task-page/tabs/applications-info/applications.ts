@@ -1,0 +1,46 @@
+import {Application} from "./application";
+
+export const Applications: Application[] = [
+  {
+    applicationId: '123345678987654',
+    fullName: 'Васильев Иван Андреевич',
+    date: '12.05.2021 23:04',
+    product: 'кредитная карта',
+    sum: '105 000 руб.',
+    term: '22 месяца',
+    position: 'продавец',
+    income: '200 142 руб.',
+    organizationName: 'ООО Ромашка',
+    duration: '7 месяцев',
+    phone: '+7 956 724 26 39 ',
+    applicationSource: 'мобильное приложение',
+  },
+  {
+    applicationId: '123345678987654',
+    fullName: 'Васильев Иван Андреевич',
+    date: '12.05.2021 23:04',
+    product: 'кредитная карта',
+    sum: '105 000 руб.',
+    term: '22 месяца',
+    position: 'продавец',
+    income: '200 142 руб.',
+    organizationName: 'ООО Ромашка',
+    duration: '7 месяцев',
+    phone: '+7 956 724 26 39 ',
+    applicationSource: 'мобильное приложение',
+  },
+  {
+    applicationId: '123345678987654',
+    fullName: 'Васильев Иван Андреевич',
+    date: '12.05.2021 23:04',
+    product: 'кредитная карта',
+    sum: '105 000 руб.',
+    term: '22 месяца',
+    position: 'продавец',
+    income: '200 142 руб.',
+    organizationName: 'ООО Ромашка',
+    duration: '7 месяцев',
+    phone: '+7 956 724 26 39 ',
+    applicationSource: 'мобильное приложение',
+  }
+]

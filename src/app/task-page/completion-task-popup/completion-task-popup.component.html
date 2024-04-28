@@ -1,0 +1,63 @@
+<div class="tui-text_h5 tui-space_bottom-2">Результат проверки</div>
+
+<div class="tui-space_bottom-5">Во время проверки выявлены негативы?</div>
+
+<form [formGroup]="negativesForm" (submit)="completeTask()">
+  <tui-checkbox-labeled
+    formControlName="noNegatives"
+    size="l"
+  >
+    Негативы не выявлены
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="falseWork"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Фальсификация трудовой деятельности
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="falsePassport"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Фальсификация паспорта
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="disabledClient"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Клиент не дееспособен
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="poorClient"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Клиент не платежеспособен
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="fraud"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Социальная инженерия
+  </tui-checkbox-labeled>
+  <tui-checkbox-labeled
+    formControlName="noSolution"
+    size="l"
+    class="tui-space_top-5"
+  >
+    Не удалось подтвердить
+  </tui-checkbox-labeled>
+
+  <button
+    tuiButton
+    type="submit"
+    appearance="secondary"
+    class="submit-button tui-space_top-6"
+  >
+    Завершить задание
+  </button>
+</form>

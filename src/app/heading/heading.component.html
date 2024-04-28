@@ -1,0 +1,12 @@
+<div class="heading">ВЕРИФИКАЦИЯ CRM</div>
+
+<button
+  *ngIf="showFinishTaskButton"
+  tuiButton
+  type="button"
+  appearance="primary"
+  size="s"
+  (click)="finishTask()"
+>
+  Завершить задание
+</button>
