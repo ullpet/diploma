@@ -20,6 +20,22 @@ const routes: Routes = [
         path: 'applications-info',
         loadChildren: () => import('./tabs/applications-info/applications-info.module').then(m => m.ApplicationsInfoModule),
       },
+      {
+        path: 'job',
+        loadChildren: () => import('./tabs/job/job.module').then(m => m.JobModule),
+      },
+      {
+        path: 'attachments',
+        loadChildren: () => import('./tabs/attachments/attachments.module').then(m => m.AttachmentsModule),
+      },
+      {
+        path: 'call-result',
+        loadChildren: () => import('./tabs/call-result/call-result.module').then(m => m.CallResultModule),
+      },
+      {
+        path: 'accounts',
+        loadChildren: () => import('./tabs/accounts/accounts.module').then(m => m.AccountsModule),
+      }
     ]
   },
 ];

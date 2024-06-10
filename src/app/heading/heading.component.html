@@ -1,4 +1,17 @@
-<div class="heading">ВЕРИФИКАЦИЯ CRM</div>
+<div class="heading">TINKOFF ВЕРИФИКАЦИЯ</div>
+
+<div>
+  <button
+  *ngIf="showFinishTaskButton"
+  icon="tuiIconPhoneCall"
+  tuiButton
+  type="button"
+  class="call-icon"
+  appearance="custom"
+  size="s"
+>
+  Позвонить клиенту
+</button>
 
 <button
   *ngIf="showFinishTaskButton"
@@ -10,3 +23,4 @@
 >
   Завершить задание
 </button>
+</div>

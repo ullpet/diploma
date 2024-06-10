@@ -1,0 +1,53 @@
+<form [formGroup]="jobInfoForm" (submit)="saveData()">
+  <div class="container">
+    <tui-input formControlName="organizationName" class="input tui-space_right-4">
+      Наименование организации
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="position" class="input">
+      Должность
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+  <div class="container">
+    <tui-input formControlName="salary" class="input tui-space_right-4">
+      Доход
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="updateDate" class="input">
+      Дата обновления
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+  <div class="container">
+    <tui-input formControlName="workingPhone" class="input tui-space_right-4">
+      Рабочий номер телефона
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+    <tui-input formControlName="address" class="input">
+      Адрес
+      <input
+        tuiTextfield
+      />
+    </tui-input>
+  </div>
+
+  <button
+    tuiButton
+    type="submit"
+    appearance="secondary"
+    class="submit-button"
+  >
+    Сохранить данные
+  </button>
+</form>

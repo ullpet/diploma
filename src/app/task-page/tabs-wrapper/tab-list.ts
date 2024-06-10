@@ -12,4 +12,20 @@ export const TabList: Tab[] = [
     title: 'Данные по заявкам',
     id: 'applications-info'
   },
+  {
+    title: 'Работа',
+    id: 'job'
+  },
+  {
+    title: 'Счета',
+    id: 'accounts'
+  },
+  {
+    title: 'Вложения',
+    id: 'attachments'
+  },
+  {
+    title: 'Результат звонка',
+    id: 'call-result'
+  },
 ]
